@@ -1,0 +1,41 @@
+/* large carousel styles */
+
+.large-carousel {
+    position: relative;
+    width: 100%;
+    margin-bottom: -0.5rem;
+
+    background-color: var(--dark);
+    z-index: -1;
+}
+
+.logos {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.logos img {
+    width: 25vw;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+img.placeholder,
+img.display {
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+img.display {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

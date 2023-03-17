@@ -1,0 +1,13 @@
+<!-- large carousel -->
+
+<!-- [@position]="position" -->
+<div class="large-carousel" [@position]="position">
+    <div class="logos">
+        <img src="/assets/images/logo.png" />
+        <img src="/assets/images/ualberta.png" />
+    </div>
+    <img src="/assets/images/blank.png" class="placeholder" />
+    <div *ngFor="let image of images; let i = index">
+        <img *ngIf="position == i" src="/assets/images/{{image}}" class="display" />
+    </div>
+</div>

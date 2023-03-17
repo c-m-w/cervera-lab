@@ -1,0 +1,19 @@
+/* our team styles */
+
+.description {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.profile-picture {
+    width: 100%;
+    max-width: 300px;
+}
+
+.biography {
+    margin: 0;
+}

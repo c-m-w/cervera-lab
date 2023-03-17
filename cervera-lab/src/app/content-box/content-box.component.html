@@ -1,0 +1,8 @@
+<!-- content box -->
+
+<div class="content-box">
+    <h1 class="content-box-title">{{ title }}</h1>
+    <div class="separator"></div>
+    <div class="date" *ngIf="date">{{ date }}</div>
+    <ng-content></ng-content>
+</div>

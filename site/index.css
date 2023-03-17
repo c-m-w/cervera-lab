@@ -1,0 +1,159 @@
+/* index styles */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	--background: #F2E9E4;
+	--dark-purple: #22223B;
+	--light-purple: #4A4E69;
+	--shadow: #9A8C98;
+	--header-height: 2rem;
+	--shadow-div-height: 2rem;
+	
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background);
+	overflow-x: hidden;
+}
+
+img {
+	width: 100%;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	height: var(--header-height);
+	width: 100vw;
+	background-color: var(--dark-purple);
+	box-shadow: 0px 5px 10px var(--shadow);
+}
+
+.action {
+	margin-top: -var(--header-height);
+	
+	height: max-content;
+	width: 100vw;
+	
+	z-index: -1;
+}
+
+.logo {
+	position: absolute;
+	top: 6rem;
+	left: 0rem;
+	
+	width: 100vw;
+	
+	display: flex;
+	justify-content: space-evenly;
+	align-items: start;
+}
+
+.logo img {
+	
+	width: 25vw;
+}
+
+section.navigation {
+	margin-top: -6.375rem;
+	position: sticky;
+	top: 0;
+}
+
+section .shadow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	height: var(--shadow-div-height);
+	width: 100vw;
+	background-color: var(--light-purple);
+	box-shadow: 0px -5px 10px var(--shadow);
+	z-index: -1;
+}
+
+section .nav-container {
+	background-color: var(--light-purple);
+	box-shadow: 0px 5px 10px var(--shadow);
+	padding: 2rem 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 50vw;
+	margin: 0 auto;
+}
+
+#nav-logo {
+	position: absolute;
+	top: 0.75rem;
+	left: 0.75rem;
+	width: 260px;
+	opacity: 0;
+	
+	transition: opacity 0.2s linear;
+}
+
+nav h1 {
+	margin: 0;
+	font-size: 2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: white;
+}
+
+main {
+	width: 50vw;
+	margin: 2rem auto;
+}
+
+h1.page-title {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	text-align: center;
+	
+	color: var(--light-purple);
+	border-bottom: 2px solid var(--light-purple);
+	
+	margin: 0 auto;
+}
+
+.content {
+	padding: 1rem;
+	background-color: var(--light-purple);
+	margin-top: 2.5rem;
+}
+
+.content > * {
+	color: white;
+	margin: 0;
+}
+
+.content h1 {
+	font-size: 2.25rem;
+	text-transform: uppercase;
+}
+
+.shadow-line {
+	background-color: var(--shadow);
+	box-shadow: 0px 0px 5px var(--shadow);
+	height: 1px;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.content p {
+	text-align: justify;
+	line-height: 1.4;
+}

@@ -1,0 +1,16 @@
+<!-- contact -->
+
+<div class="contact">
+    <div class="info" *ngIf="email">
+        <img src="/assets/images/email.png" class="icon" />
+        <span class="data">{{ email }}</span>
+    </div>
+    <div class="info" *ngIf="link">
+        <img src="/assets/images/link.png" class="icon" />
+        <a class="data" href="{{link}}">UAlberta Directory</a>
+    </div>
+    <div class="info" *ngIf="phone">
+        <img src="/assets/images/phone.png" class="icon" />
+        <span class="data">{{ phone }}</span>
+    </div>
+</div>

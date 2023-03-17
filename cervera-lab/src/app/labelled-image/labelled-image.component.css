@@ -1,0 +1,13 @@
+/* labelled image styles */
+
+.labelled-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.label {
+    margin: 0 auto;
+}

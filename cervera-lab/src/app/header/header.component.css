@@ -1,0 +1,15 @@
+/* header styles */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 0.5rem;
+    width: 100vw;
+
+    background-color: var(--dark);
+    box-shadow: 0px 5px 10px var(--light-shadow);
+
+    z-index: 1;
+}

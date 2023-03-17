@@ -1,0 +1,17 @@
+/* contact styles */
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info a {
+    text-decoration: underline;
+}
+
+.info:not(:first-child) {
+    margin-top: 0.5rem;
+}
+

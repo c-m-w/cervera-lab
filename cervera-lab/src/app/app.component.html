@@ -1,0 +1,9 @@
+<!-- app  -->
+
+<app-header></app-header>
+<app-large-carousel
+    [images]="['1.png', '2.png']"></app-large-carousel>
+<app-navigation></app-navigation>
+<div [@routeAnimations]="getRouteAnimationsData()">
+    <router-outlet></router-outlet>
+</div>
