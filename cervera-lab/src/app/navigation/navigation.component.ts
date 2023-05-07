@@ -47,6 +47,11 @@ export class NavigationComponent {
         return this.router.url.includes(this.sectionLinks[sectionIndex]);
     }
 
+    sectionIcon(sectionIndex: number): string {
+
+        return "/assets/images/" + this.sectionLinks[sectionIndex] + ".png";
+    }
+
     @HostListener("window: scroll")
     checkScroll() {
 

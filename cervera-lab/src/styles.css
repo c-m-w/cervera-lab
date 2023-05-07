@@ -15,11 +15,21 @@ html {
     --main-content-min: 600px;
     --main-content: 60vw;
     --main-content-max: 1000px;
+    --main-margin: 0rem;
 
     --border-radius: 10px;
 
 	font-family: 'Roboto', sans-serif;
     color: var(--text);
+}
+
+@media screen and (max-width: 650px)
+{
+    html {
+        --main-content-min: 0px;
+        --main-margin: 1rem;
+        --main-content: calc(100vw - 2 * var(--main-margin));
+    }
 }
 
 body {

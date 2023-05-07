@@ -5,10 +5,16 @@
     <div class="nav-container" [@logoEnter]="showLogo">
         <img src="/assets/images/logo.png" class="logo" *ngIf="showLogo" />
         <nav>
-            <div *ngFor="let section of sections; let i = index">
+            <ng-container *ngFor="let section of sections; let i = index">
                 <a routerLink="{{sectionLinks[i]}}"
-                    [class.selected]="selectedSection(i)">{{section}}</a>
-            </div>
+                    [class.selected]="selectedSection(i)"
+                    class="text">{{section}}</a>
+                <a routerLink="{{sectionLinks[i]}}"
+                    [class.selected]="selectedSection(i)"
+                    class="icon">
+                    <img [src]="sectionIcon(i)" />
+                </a>
+            </ng-container>
         </nav>
     </div>
 </div>

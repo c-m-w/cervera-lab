@@ -3,6 +3,7 @@
 .large-carousel {
     position: relative;
     width: 100%;
+    min-height: 250px;
     margin-bottom: -0.5rem;
 
     background-color: var(--dark);
@@ -22,7 +23,7 @@
 }
 
 .logos img {
-    width: 25vw;
+    width: 33vw;
     max-width: 400px;
     min-width: 200px;
 }
@@ -38,4 +39,20 @@ img.display {
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
+}
+
+@media screen and (max-width: 650px)
+{
+    .logos {
+        margin: 0 auto;
+    }
+
+    .logos img {
+        width: 300px;
+    }
+
+    .logos img:last-child {
+        display: none;
+    }
 }

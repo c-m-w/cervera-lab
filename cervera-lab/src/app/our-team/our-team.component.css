@@ -17,3 +17,22 @@
 .biography {
     margin: 0;
 }
+
+@media screen and (max-width: 650px) {
+
+    .profile-picture {
+        max-width: 350px;
+        max-height: 60vw;
+        object-fit: cover;
+        border-radius: var(--border-radius);
+
+        display: block;
+        margin: 0 auto;
+    }
+
+    .description {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+}
